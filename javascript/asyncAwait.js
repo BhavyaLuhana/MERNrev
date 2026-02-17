@@ -11,15 +11,3 @@ async function getApiData() {
 }
 // adding await means we are stoping the flow of execution until the promise is resolved.
 // We will wait untill the data is fetched.
-options = {
-    method: "POST",
-    headers: {
-        "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
-        title: "I love you",
-        userId: 1
-    })
-}
-
-getApiData();
