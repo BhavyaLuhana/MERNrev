@@ -1,16 +1,11 @@
-# React + Vite
+1. Components: React components are the fundamental building blocks of React applications, serving as independent, reusable pieces of code that define a specific part of the user interface (UI). 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+2. Props: When we have to share the data between the components, we use props, they are like function parameters of the component.
 
-Currently, two official plugins are available:
+for example: In UserCard.jsx component, we can pass name variable as the parameter in the arrow function, and we can pass the name of the user in the parent component
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+UserCard = (props) => { <p>user name is {props.name}</p> } and in the app.jsx we can use it like this <UserCard name="Radha Krishna"/>
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+3. JSX: JSX is javascript xml, in this file we can use the functionalities of both html and js.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
