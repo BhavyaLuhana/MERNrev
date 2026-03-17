@@ -9,3 +9,7 @@ UserCard = (props) => { <p>user name is {props.name}</p> } and in the app.jsx we
 
 3. JSX: JSX is javascript xml, in this file we can use the functionalities of both html and js.
 
+4. Hooks: 
+
+5. useState: It takes two values first is the variable that represents the state and the other is the state function.
+             The state functions sets the value like this: setSomething(nextState);
