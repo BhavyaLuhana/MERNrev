@@ -18,7 +18,7 @@ function App() {
 
       {/* <Counter /> */}
 
-      <Props handleClick={handleClick} />
+      <Props count={count} onButtonClick={handleClick} />
       <h1>{count}</h1>
       
     </div>
