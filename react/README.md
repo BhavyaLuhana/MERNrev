@@ -16,4 +16,11 @@ UserCard = (props) => { <p>user name is {props.name}</p> } and in the app.jsx we
 6. useState: It takes two values first is the variable that represents the state and the other is the state function.
             The state functions sets the value like this: setSomething(nextState);
 
-7. State Lifting(Interview heavy topic): 
+7. State Lifting(Interview heavy topic): It is the process of moving state from a child component to the nearest common parent so multiple components can share and stay in sync with that data.
+
+8. Conditional Rendering: It mean showing componenets to the user, in certain conditions. For example, if user is logged out we show login button and if he is logged in then we show logout button
+
+            1. If-else
+            2. Ternary operator: used mostly
+            3. Logical operator
+            4. Early return
